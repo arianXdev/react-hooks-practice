@@ -1,5 +1,6 @@
 import { Component, createRef } from "react";
 
+// Refs in Class Components
 class UseRefExercise extends Component {
 	constructor() {
 		super();
@@ -32,7 +33,7 @@ class UseRefExercise extends Component {
 	};
 
 	handleClearInput() {
-		// this.setState({ name: "" }); // The best way to do this but I don't want to do it in this way! I want to clear the input with useRef Hook to practice...
+		// this.setState({ name: "" }); // The best way to do this but I don't want to do it in this way! I want to clear the input with refs to practice...
 
 		const inputElement = this.inputRef.current;
 
