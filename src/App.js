@@ -1,4 +1,5 @@
 import UseRefExample from "./hooks/UseRefExample";
+import UseRefPractice from "./hooks/UseRefPractice"; // funcitonal component
 
 import "./App.css";
 
@@ -14,7 +15,8 @@ const App = () => {
 				<hr />
 			</div>
 
-			<UseRefExample />
+			{/* <UseRefExample /> */}
+			<UseRefPractice />
 		</div>
 	);
 };
