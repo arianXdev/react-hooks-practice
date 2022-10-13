@@ -1,7 +1,7 @@
 import { Component, createRef } from "react";
 
 // Refs in Class Components
-class UseRefExercise extends Component {
+class RefsExercise extends Component {
 	constructor() {
 		super();
 
@@ -80,4 +80,4 @@ class UseRefExercise extends Component {
 	}
 }
 
-export default UseRefExercise;
+export default RefsExercise;
