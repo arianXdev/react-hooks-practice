@@ -17,29 +17,29 @@ class RefsExercise extends Component {
 
 	componentDidMount() {
 		// Focus on the input after rendering
-		const inputElement = this.inputRef.current;
-		inputElement.focus();
+		const inputEl = this.inputRef.current;
+		inputEl.focus();
 	}
 
 	handleAddName = () => {
-		const ulElement = this.listRef.current;
-		const inputElement = this.inputRef.current;
+		const ulEl = this.listRef.current;
+		const inputEl = this.inputRef.current;
 
 		if (this.state.name !== "") {
-			ulElement.innerHTML += `<li>${this.state.name}</li>`;
+			ulEl.innerHTML += `<li>${this.state.name}</li>`;
 			this.setState({ name: "" });
-			inputElement.focus();
+			inputEl.focus();
 		}
 	};
 
 	handleClearInput() {
 		// this.setState({ name: "" }); // The best way to do this but I don't want to do it in this way! I want to clear the input with refs to practice...
 
-		const inputElement = this.inputRef.current;
+		const inputEl = this.inputRef.current;
 
-		inputElement.value = "";
+		inputEl.value = "";
 		this.setState({ name: "" });
-		inputElement.focus();
+		inputEl.focus();
 	}
 
 	handleClearNames = () => {
