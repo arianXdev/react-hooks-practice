@@ -1,5 +1,6 @@
-import UseRefExample from "./hooks/UseRefExample";
+import Accordion from "./components/Accordion";
 import UseMemoExample from "./hooks/UseMemoExample";
+import UseRefExample from "./hooks/UseRefExample";
 import UseRefPractice from "./hooks/UseRefPractice"; // funcitonal component
 import RefsExercise from "./refs/RefsExercise"; // Class component
 
@@ -15,12 +16,18 @@ const App = () => {
 					</div>
 				</div>
 				<hr />
-			</div>
 
-			{/* <UseRefExample /> */}
-			{/* <UseRefPractice /> */}
-			{/* <RefsExercise /> */}
-			<UseMemoExample />
+				{/* <UseRefExample /> */}
+				{/* <UseRefPractice /> */}
+
+				<Accordion title="UseRef Example" heading="firstHeading">
+					<RefsExercise />
+				</Accordion>
+				<br />
+				<Accordion title="UseMemo Example" heading="secondHeading">
+					<UseMemoExample />
+				</Accordion>
+			</div>
 		</div>
 	);
 };
