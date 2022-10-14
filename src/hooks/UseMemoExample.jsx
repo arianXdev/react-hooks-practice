@@ -1,46 +1,34 @@
-import { useState, useMemo, useEffect } from "react";
-
-const getSuperSlower = (num) => {
-	console.log("Super Slow Function is running...");
-
-	let count = 0;
-
-	while (count <= 1000000000) {
-		count++;
-	}
-
-	return num * 2;
-};
+import { useState, useEffect, useMemo } from "react";
 
 const UseMemoExample = () => {
 	const [number, setNumber] = useState(0);
-	const [colorChange, setColorChange] = useState(false);
+	const [dark, setDark] = useState(false);
+	const doubleNumber = slowFunction(number);
 
-	const doubleNumber = getSuperSlower(number);
-
-	const appStyle = {
-		backgroundColor: colorChange ? "cyan" : "white",
+	const themeStyles = {
+		backgroundColor: dark ? "black" : "white",
+		color: dark ? "white" : "black",
 	};
 
-	useEffect(() => {
-		console.log("Background Changed!");
-	}, [appStyle]);
-
 	return (
-		<div className="container">
-			<div className="mx-auto mt-3 d-flex justify-content-center align-items-center w-75 flex-column" style={appStyle}>
-				<input type="text" className="form-control" value={number} onChange={(e) => setNumber(e.target.value)} placeholder="Give me a number..." />
+		<div className="d-flex justify-content-center align-items-center flex-column">
+			<input type="number" className="form-control w-50" value={number} onChange={(e) => setNumber(parseInt(e.target.value))} />
 
-				<button type="button" className="btn btn-outline-info btn-block w-50 mt-3" onClick={() => setColorChange((prevColorChange) => !prevColorChange)}>
-					Change the color
-				</button>
+			<button className="btn btn-block btn-info my-3" onClick={() => setDark((prevDark) => !prevDark)}>
+				Change theme
+			</button>
 
-				<div style={appStyle} className="text-center mx-auto mt-4">
-					<p className="alert alert-warning">{`The Squared Number is equal : ${doubleNumber}`}</p>
-				</div>
+			<div className="alert alert-warning" style={themeStyles}>
+				Result: {doubleNumber}
 			</div>
 		</div>
 	);
+};
+
+const slowFunction = (num) => {
+	console.log("Calling Slow Function");
+	// for (let i = 0; i <= 1000000000; i++) {}
+	return num * 2;
 };
 
 export default UseMemoExample;
