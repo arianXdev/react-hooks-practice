@@ -1,5 +1,7 @@
 import { useState, useCallback, useEffect } from "react";
 
+import List from "../components/List";
+
 const UseCallbackExmaple = () => {
 	const [number, setNumber] = useState(1);
 	const [dark, setDark] = useState(false);
@@ -14,7 +16,7 @@ const UseCallbackExmaple = () => {
 	};
 
 	return (
-		<div style={style}>
+		<div style={theme}>
 			<input type="number" value={number} onChange={(e) => setNumber(parseInt(e.target.value))} />
 
 			<button onClick={() => setDark((prevDark) => !prevDark)}>Toggle Theme</button>
