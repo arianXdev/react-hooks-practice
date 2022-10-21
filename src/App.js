@@ -30,7 +30,7 @@ const App = () => {
 					<UseCallbackExample />
 				</Accordion>
 				<br />
-				<Accordion title="UseCallback Exmaple" heading="fifthHeading">
+				<Accordion title="UseReducer Exmaple" heading="fifthHeading">
 					<UseReducerExample />
 				</Accordion>
 			</div>
