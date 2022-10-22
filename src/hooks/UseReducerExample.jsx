@@ -10,7 +10,7 @@ const UseReducerExample = () => {
 				➕ Increase
 			</button>
 			<p className="alert alert-warning text-center my-3">
-				Your counter is equal to {} <span className="badge rounded-pill bg-success"></span>
+				Your counter is equal to {count} <span className="badge rounded-pill bg-success"></span>
 			</p>
 			<button className="btn btn-danger W-50" onClick={() => setCount((prevCount) => prevCount - 1)}>
 				➖ Decrease
