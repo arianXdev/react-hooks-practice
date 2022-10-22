@@ -1,5 +1,14 @@
 import { useState } from "react";
 
+/*
+ * useReducer hook is an alternative instead of using useState
+ * useReducer hook is similar to Redux which is a state management tool,
+ * useRedcuer is made of three parts: 1. reducer 2. action 3. store
+ *** 1. reducer: they're functions! what do they do? They actually handle the state depending on what we want,
+ *** 2. action: an object that we send (dispatch) to reducer functions to do something (properties: type [implements on state], payload [value]),
+ *** 3. store: a place in which state stores there, so it actually stores the state.
+ */
+
 const UseReducerExample = () => {
 	const [count, setCount] = useState(0);
 
