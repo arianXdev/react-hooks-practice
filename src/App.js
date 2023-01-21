@@ -1,6 +1,6 @@
 import Accordion from "./components/Accordion";
 
-import { RefsExercise, UseCallbackExample, UseReducerExample, UseRefHook, UseMemoHook } from "./hooks";
+import { RefsExercise, UseCallbackExample, UseReducerExample, UseRefHook, UseMemoHook, UseCallbackHook } from "./hooks";
 
 import "./App.css";
 
@@ -37,9 +37,14 @@ const App = () => {
 				<Accordion title="UseRef Hook" headning="sixthHeading">
 					<UseRefHook />
 				</Accordion> */}
-				<br />
+				{/* <br />
 				<Accordion title="UseMemo Hook" headning="seventhHeading">
 					<UseMemoHook />
+				</Accordion> */}
+
+				<br />
+				<Accordion title="UseCallback Hook" headning="eighthHeading">
+					<UseCallbackHook />
 				</Accordion>
 			</div>
 		</div>
