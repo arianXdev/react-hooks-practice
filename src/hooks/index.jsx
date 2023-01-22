@@ -7,3 +7,4 @@ export { default as RefsExercise } from "../refs//RefsExercise"; // Class compon
 export { default as UseRefHook } from "./UseRefHook";
 export { default as UseMemoHook } from "./UseMemoHook";
 export { default as UseCallbackHook } from "./UseCallbackHook";
+export { default as UseReducerHook } from "./UseReducerHook";
