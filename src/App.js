@@ -29,10 +29,11 @@ const App = () => {
 				<Accordion title="UseCallback Exmaple" heading="fourthHeading">
 					<UseCallbackExample />
 				</Accordion>
-				<br /> */}
-				{/* <Accordion title="UseReducer Exmaple" heading="fifthHeading">
+				// <br /> */}
+				<br />
+				<Accordion title="UseReducer Exmaple" heading="fifthHeading">
 					<UseReducerExample />
-				</Accordion> */}
+				</Accordion>
 				{/* <br />
 				<Accordion title="UseRef Hook" headning="sixthHeading">
 					<UseRefHook />
@@ -41,11 +42,11 @@ const App = () => {
 				<Accordion title="UseMemo Hook" headning="seventhHeading">
 					<UseMemoHook />
 				</Accordion> */}
-
+				{/* 
 				<br />
 				<Accordion title="UseCallback Hook" headning="eighthHeading">
 					<UseCallbackHook />
-				</Accordion>
+				</Accordion> */}
 			</div>
 		</div>
 	);
