@@ -1,5 +1,10 @@
 import { useDeferredValue, useState, useMemo, useEffect } from "react";
 
+// useDeferredValue is a React Hook that lets you defer updating a part of the UI.
+// const deferredValue = useDeferredValue(value)
+
+// Call useDeferredValue at the top level of your component to get a deferred version of that value.
+
 const List = ({ value }) => {
 	const list = useMemo(() => {
 		const numbersList = [];
