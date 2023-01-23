@@ -10,3 +10,4 @@ export { default as UseCallbackHook } from "./UseCallbackHook";
 export { default as UseReducerHook } from "./UseReducerHook";
 export { default as Todo } from "../components/Todo";
 export { default as UseLayoutEffectHook } from "./UseLayoutEffectHook";
+export { default as UseImperativeHandleHook } from "./UseImperativeHandleHook";
