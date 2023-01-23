@@ -10,6 +10,7 @@ import {
 	UseReducerHook,
 	UseLayoutEffectHook,
 	UseImperativeHandleHook,
+	UseDeferredValueHook,
 } from "./hooks";
 
 import "./App.css";
@@ -65,9 +66,13 @@ const App = () => {
 				<Accordion title="UseLayoutEffect Hook" heading="tenthHeading">
 					<UseLayoutEffectHook />
 				</Accordion> */}
-				<br />
+				{/* <br />
 				<Accordion title="UseImperativeHandle Hook" heading="eleventhHeading">
 					<UseImperativeHandleHook />
+				</Accordion> */}
+				<br />
+				<Accordion title="UseDeferredValue Hook" heading="12thHeading">
+					<UseDeferredValueHook />
 				</Accordion>
 			</div>
 		</div>
